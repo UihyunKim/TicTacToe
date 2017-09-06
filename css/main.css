@@ -1,0 +1,207 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: 500px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    font-family: 'Megrim', cursive;
+}
+
+header .continue {
+    display: none;
+}
+
+main {
+    height: 500px;
+    text-align: center;
+}
+
+main>div {
+    width: 100%;
+    height: 100%;
+}
+
+.pads {
+    width: 33.3%;
+    height: 33.3%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pads.selectable:hover {
+    background-color: lightgray !important;
+}
+
+.pads .fa-times {
+    font-size: 10em;
+    position: relative;
+    top: -6px;
+}
+
+.pads .fa-circle {
+    font-size: 8.4em;
+}
+
+div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.users, .reset {
+    width: 33.3%;
+    padding: 0 7px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user .fa {
+    color: lightgray;
+}
+
+.user .fa-circle {
+    font-size: 0.9em;
+}
+
+p, header div {
+    margin: 0;
+    text-align: center;
+}
+
+.phase2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h5 {
+    /*font-family: 'Monofett', cursive;*/
+    font-family: 'Megrim', cursive;
+    font-weight: bold;
+    font-size: 2.6em;
+    margin: 20px 10px 20px;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;
+}
+
+form input {
+    margin-left: 10px;
+}
+
+.submit {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.center-left {
+    text-align: left;
+    margin: auto;
+    font-size: 1.4em;
+}
+
+form input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+}
+
+form input[type=radio]:checked ~ .check {
+    border: 5px solid black;
+}
+
+form input[type=radio]:checked ~ .check::before {
+    background: black;
+}
+
+form input[type=radio]:checked ~ label {
+    color: black;
+}
+
+form .check {
+    display: block;
+    position: absolute;
+    border: 5px solid grey;
+    border-radius: 100%;
+    height: 26px;
+    width: 26px;
+    top: 1px;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+    z-index: 5;
+}
+
+form .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    top: 3px;
+    left: 3px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+form label {
+    -webkit-transition: all 0.25s linear;
+    cursor: pointer;
+    color: grey;
+    z-index: 10;
+    display: block;
+    position: relative;
+    padding: 0 0 0 35px;
+}
+
+form label:hover, {
+    color: black;
+}
+
+.center-left > div {
+    width: 250px;
+    margin: 10px auto;
+    position: relative;
+    padding-left: 20px;
+}
+
+.select2 {
+    margin-top: 40px;
+}
+
+.submit input {
+    border: none;
+    background-color: white;
+    margin-top: 20px;
+    font-family: 'Monofett', cursive;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+.submit input[type=submit]:focus {
+    color: darkslategray;
+    outline: 0;
+}

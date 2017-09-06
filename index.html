@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- import sources -->
+    <script src="https://use.fontawesome.com/1a92bb96eb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Monofett|Roboto" rel="stylesheet">
+
+    <title>Tic Tac Toe!</title>
+</head>
+
+<body>
+    <div class="center">
+        <header class="dashboard" style="visibility: hidden">
+            <div class="users">
+                <div class="user me">
+                    <div class="player"><i></i></div>
+                    <div class="turn">user</div>
+                    <div class="score">0</div>
+                </div>
+                <div class="user you">
+                    <div class="player"><i></i></div>
+                    <div class="turn">com</div>
+                    <div class="score">0</div>
+                </div>
+            </div>
+            <div class="continue">
+                <a href="#">continue</a>
+            </div>
+            <div class="reset">
+                <a href="#">
+                    <p>reset all</p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="phase1">
+                <form id="start" name="myform" action="" method="POST">
+                    <div class="select1">
+                        <div>
+                            <h5>with whom</h5>
+                        </div>
+                        <div class="center-left">
+                            <div>
+                                <input id="user-vs-computer" type="radio" name="group1" value="user-vs-computer" checked>
+                                <label for="user-vs-computer">user vs computer</label>
+                                <div class="check"></div>
+                            </div>
+                            <div>
+                                <input id="user-vs-user" type="radio" name="group1" value="user-vs-user">
+                                <label for="user-vs-user">user vs user</label>
+                                <div class="check"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select2">
+                        <div>
+                            <h5>with what</h5>
+                        </div>
+                        <div class="center-left">
+                            <div>
+                                <input id="o" type="radio" name="group2" value="o" checked>
+                                <label for="o">o</label>
+                                <div class="check"></div>
+                            </div>
+                            <div>
+                                <input id="x" type="radio" name="group2" value="x">
+                                <label for="x">x</label>
+                                <div class="check"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <div>
+                            <input type="submit" value="start">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="phase2" style="display:none">
+                <div id="pad1" class="pads selectable"><i aria-hidden='true'></i></div>
+                <div id="pad2" class="pads selectable"><i aria-hidden='true'></i></div>
+                <div id="pad3" class="pads selectable"><i aria-hidden='true'></i></div>
+                <div id="pad4" class="pads selectable"><i aria-hidden='true'></i></div>
+                <div id="pad5" class="pads selectable"><i aria-hidden='true'></i></div>
+                <div id="pad6" class="pads selectable"><i aria-hidden='true'></i></div>
+                <div id="pad7" class="pads selectable"><i aria-hidden='true'></i></div>
+                <div id="pad8" class="pads selectable"><i aria-hidden='true'></i></div>
+                <div id="pad9" class="pads selectable"><i aria-hidden='true'></i></div>
+            </div>
+        </main>
+    </div>
+    <!-- import scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- fallback to local -->
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js">\x3C/script>')
+    </script>
+    <!-- js codes -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
