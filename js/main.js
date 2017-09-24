@@ -142,6 +142,7 @@ $(document).ready(function() {
             console.log(game.winNumbers);
             game.over();
 
+
             // prevent click from next turn
             $('.pads').removeClass("selectable");
         } else {
